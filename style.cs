@@ -1,59 +1,87 @@
-﻿body {
-    font-family: Arial, sans-serif;
-    background-color: #0d0d0d;
-    color: gold;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(180deg, #0d0d0d, #1a1a1a); /* dark gradient background */
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header section */
 header {
-    background-color: black;
-    padding: 20px;
+  padding: 20px;
 }
-h1 {
-    color: gold;
+
+header .logo {
+  max-width: 150px; /* size of logo */
+  margin-bottom: 10px;
 }
+
+header h1 {
+  font-size: 2rem;
+  color: #facc15; /* gold */
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #38bdf8; /* light blue */
+  margin-top: 5px;
+}
+
+/* Offer section */
 .offer {
-    padding: 30px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
+.offer .banner {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+}
+
+.offer p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* Countdown timer */
 .timer {
-    font-size: 2em;
-    margin: 20px 0;
-    color: #ffcc00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f87171; /* red */
 }
 
+/* CTA button */
 .cta-btn {
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: gold;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  background: #22c55e; /* green */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #ffcc33;
+  background: #16a34a; /* darker green */
 }
 
-.whatsapp-btn {
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: green;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-.whatsapp-btn:hover {
-    background-color: darkgreen;
-}
-
+/* Footer */
 footer {
-    background-color: black;
-    padding: 10px;
-    font-size: 0.9em;
+  background: #111;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
